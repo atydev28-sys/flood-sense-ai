@@ -32,9 +32,9 @@ class FloodDeepNet(nn.Module):
         return self.output(x)
 
 @st.cache_resource
-def load_and_train_deep_engine():
-    csv_path = r"C:\Users\atiks\FloodSense\app\flood_predictions.csv"
-    model_path = r"C:\Users\atiks\FloodSense\app\flood_model.pth"
+def load_and_train_deep_eneding(): # (keep your exact function name here)
+    csv_path = "flood_predictions.csv"
+    model_path = "flood_model.pth"
     if not os.path.exists(csv_path):
         st.error("⚠️ dataset not found!")
         return None, None, None, None
