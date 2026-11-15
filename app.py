@@ -32,7 +32,7 @@ class FloodDeepNet(nn.Module):
         return self.output(x)
 
 @st.cache_resource
-def load_and_train_deep_eneding(): # (keep your exact function name here)
+def load_and_train_deep_engine():
     csv_path = "flood_predictions.csv"
     model_path = "flood_model.pth"
     if not os.path.exists(csv_path):
